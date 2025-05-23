@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import { FilterContext, UpdateFilterContext } from "../hooks/filter";
 import type FilterType from "../types/filter";
-import { brands, categories } from "../data/all-brands";
+import { brands, categories } from "../data/data";
 
 export type Actions =
   | {

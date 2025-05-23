@@ -17,6 +17,7 @@ export default function RatingFilter() {
           />
         );
       })}
+      <RatingItem id="All" name="rating" checked={rating == 0} />
     </div>
   );
 }
