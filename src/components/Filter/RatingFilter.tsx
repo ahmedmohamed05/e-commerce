@@ -1,4 +1,4 @@
-import { useFilter } from "../hooks/filter";
+import { useFilter } from "../../hooks/filter";
 import RatingItem from "./RatingItem";
 
 export default function RatingFilter() {

@@ -1,6 +1,6 @@
 import { createContext, useContext, type Dispatch } from "react";
 import type FilterType from "../types/filter";
-import type { Actions } from "../components/FilterProvider";
+import type { Actions } from "../types/filtering-actions";
 
 export const FilterContext = createContext<FilterType>({
   searchText: "",

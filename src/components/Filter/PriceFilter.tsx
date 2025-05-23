@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useFilter, useUpdateFilter } from "../hooks/filter";
+import { useFilter, useUpdateFilter } from "../../hooks/filter";
 
 export default function PriceFilter() {
   const { price } = useFilter();

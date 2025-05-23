@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
-import { useUpdateFilter } from "../hooks/filter";
-import type FilterType from "../types/filter";
+import { useUpdateFilter } from "../../hooks/filter";
+import type FilterType from "../../types/filter";
 
 export interface RatingItemProps {
   stars?: number;

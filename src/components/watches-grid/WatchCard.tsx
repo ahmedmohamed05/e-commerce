@@ -16,7 +16,7 @@ export default function WatchCard({
   rating,
 }: WatchCardProps) {
   return (
-    <div className="border-2 border-gray-400 rounded py-2 px-4 cursor-pointer transition-all duration-200 hover:shadow-md">
+    <div className="border-2 border-gray-400 rounded py-2 px-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
       <div className="image w-full relative overflow-hidden h-60">
         <img
           src={image}

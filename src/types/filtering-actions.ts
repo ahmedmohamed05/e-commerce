@@ -2,6 +2,10 @@ import type FilterType from "./filter";
 
 export type Actions =
   | {
+      type: "text-change";
+      newText: string;
+    }
+  | {
       type: "change-select";
       list: "brands" | "categories";
       item: string;

@@ -1,7 +1,8 @@
-import Filters from "./components/Filters";
+import FilterProvider from "./components/Filter/FilterProvider";
+import Filters from "./components/Filter/Filters";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Main from "./components/Main";
-import FilterProvider from "./components/FilterProvider";
+import Main from "./components/watches-grid/Main";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Main />
         </div>
       </FilterProvider>
+      <Footer />
     </div>
   );
 }

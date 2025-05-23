@@ -1,27 +1,8 @@
 import { useReducer } from "react";
-import { FilterContext, UpdateFilterContext } from "../hooks/filter";
-import type FilterType from "../types/filter";
-import { brands, categories } from "../data/data";
-
-export type Actions =
-  | {
-      type: "text-change";
-      newText: string;
-    }
-  | {
-      type: "change-select";
-      list: "brands" | "categories";
-      item: string;
-    }
-  | {
-      type: "change-price";
-      newPrice: number;
-    }
-  | {
-      type: "change-rating";
-      newRating: FilterType["rating"];
-    }
-  | { type: "clear" };
+import type FilterType from "../../types/filter";
+import { categories, brands } from "../../data/data";
+import { FilterContext, UpdateFilterContext } from "../../hooks/filter";
+import type { Actions } from "../../types/filtering-actions";
 
 const INIT_FILTER: FilterType = {
   searchText: "",
@@ -68,7 +49,9 @@ export default function FilterProvider({ children }: FilterProviderProps) {
 
   return (
     <FilterContext.Provider value={filter}>
-      <UpdateFilterContext value={dispatch}>{children}</UpdateFilterContext>
+      <UpdateFilterContext.Provider value={dispatch}>
+        {children}
+      </UpdateFilterContext.Provider>
     </FilterContext.Provider>
   );
 }

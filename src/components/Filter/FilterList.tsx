@@ -1,5 +1,5 @@
-import { useUpdateFilter } from "../hooks/filter";
-import type { ListItem } from "../types/filter";
+import { useUpdateFilter } from "../../hooks/filter";
+import type { ListItem } from "../../types/filter";
 import FilterListItem from "./FilterListItem";
 
 export interface FilterListProps {
