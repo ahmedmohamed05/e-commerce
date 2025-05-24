@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className="py-4 border-b-2 border-b-gray-300">
       <div className="container max-md:px-1 mx-auto flex items-center gap-4 md:gap-8">
-        <NavLink to="/" className="text-2xl md:text-3xl font-bold hover:text-blue-600 transition-colors">
+        <NavLink to="/" className="text-2xl md:text-3xl font-bold">
           Watch Haven
         </NavLink>
         <div className="search flex-1 md:pl-8">
@@ -28,8 +28,8 @@ function Header() {
             onChange={handleTextChange}
           />
         </div>
-        <NavLink 
-          to="/cart" 
+        <NavLink
+          to="/cart"
           className="relative p-1.5 hover:text-blue-600 transition-colors"
           aria-label="Shopping Cart"
         >
