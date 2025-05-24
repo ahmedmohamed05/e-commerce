@@ -1,5 +1,12 @@
-import allWatches from "../data/watches.json";
+import type { WatchType } from "./filter-list";
 
-export default function findProduct(id: string) {
-    return allWatches.find((watch) => watch.id === Number(id));
+let allWatches: WatchType[] = [];
+
+// This function is called by the Main component when watches are loaded
+export function setWatchesData(watches: WatchType[]) {
+  allWatches = [...watches];
+}
+
+export default function findProduct(id: string): WatchType | undefined {
+  return allWatches.find((watch) => watch.id === Number(id));
 }
