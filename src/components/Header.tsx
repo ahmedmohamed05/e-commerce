@@ -30,15 +30,14 @@ function Header() {
         </div>
         <NavLink
           to="/cart"
-          className="relative p-1.5 hover:text-blue-600 transition-colors"
+          className="relative p-1.5"
           aria-label="Shopping Cart"
         >
           <IoCartOutline size={26} />
           <span className="sr-only">View Cart</span>
-          {/* You can add a cart item counter here later */}
-          {/* <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+          <span className="absolute -top-1 -right-1 bg-gray-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
             0
-          </span> */}
+          </span>
         </NavLink>
       </div>
     </header>

@@ -1,23 +1,58 @@
 import { NavLink, useParams } from "react-router-dom";
+import findProduct from "../utils/find-product";
+import { FaArrowLeft } from "react-icons/fa";
+import RatingStars from "../components/watches-grid/RatingStars";
 
 export default function Product() {
   const { id } = useParams<{ id: string }>();
-  
-  // In a real app, you would fetch the product details using the id
-  // For now, we'll just display the product ID
-  
+
+  const product = findProduct(id!)!;
+
   return (
-    <div className="container mx-auto p-4">
-      <NavLink to="/" className="text-blue-600 hover:underline">
-        Back to Home
+    <div className="container max-md:px-1 mx-auto py-20">
+      <NavLink
+        to="/"
+        className="text-gray-600 hover:underline flex items-center gap-2"
+      >
+        <FaArrowLeft />
+        <span>Back to Home</span>
       </NavLink>
-      <h1 className="text-3xl font-bold mb-6">Product Details</h1>
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <p className="text-lg mb-4">Product ID: {id}</p>
-        <p className="text-gray-600">
-          This is where the product details will be displayed.
-          You can fetch the product data using the ID from the URL.
-        </p>
+
+      <div className="product grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="image p-4 sm:p-8 bg-gray-200 rounded-lg flex items-center justify-center">
+          <div className="relative w-full h-64 sm:h-80 md:h-96 max-w-full">
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-full object-contain max-w-full max-h-full"
+            />
+          </div>
+        </div>
+        <div className="info">
+          <p className="text-gray-600">{product.brand}</p>
+          <h2 className="text-3xl font-bold">{product.name}</h2>
+          <div className="rating flex items-center gap-2 my-2">
+            <RatingStars rating={product.rating} />
+            <p className="rating-number text-gray-500">
+              {product.rating} (20) reviews
+            </p>
+          </div>
+          <p className="text-2xl font-bold mb-8">${product.price}</p>
+          <p className="text-gray-600 my-8 max-w-lg">{product.description}</p>
+
+          <p className="text-gray-600 font-bold text-lg">Features:</p>
+          <ul className="list-disc list-inside my-4">
+            {product.features.map((feature, i) => (
+              <li key={i} className="text-gray-600">
+                {feature}
+              </li>
+            ))}
+          </ul>
+
+          <button className="bg-gray-950 text-white py-2 px-4 rounded hover:bg-gray-800 transition-colors cursor-pointer">
+            Add to Cart
+          </button>
+        </div>
       </div>
     </div>
   );
