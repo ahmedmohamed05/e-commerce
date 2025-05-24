@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useFilter } from "../../hooks/filter";
+import { useFilter } from "../../context/filter";
 import FilterList from "./FilterList";
 
 export default function FilteringLists() {

@@ -1,4 +1,4 @@
-import { useUpdateFilter } from "../../hooks/filter";
+import { useUpdateFilter } from "../../context/filter";
 import type { ListItem } from "../../types/filter";
 import FilterListItem from "./FilterListItem";
 

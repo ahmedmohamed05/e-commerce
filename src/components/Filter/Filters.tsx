@@ -8,10 +8,6 @@ function Filters() {
       <FilteringLists />
       <PriceFilter />
       <RatingFilter />
-
-      <button className="bg-black text-white w-full mt-8 py-2 rounded-md hover:bg-gray-800 transition-colors cursor-pointer">
-        Apply Filter
-      </button>
     </aside>
   );
 }

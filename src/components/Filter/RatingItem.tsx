@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import { useUpdateFilter } from "../../hooks/filter";
+import { useUpdateFilter } from "../../context/filter";
 import type FilterType from "../../types/filter";
 
 export interface RatingItemProps {

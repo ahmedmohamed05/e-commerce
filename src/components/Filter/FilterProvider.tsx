@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import type FilterType from "../../types/filter";
 import { categories, brands } from "../../data/data";
-import { FilterContext, UpdateFilterContext } from "../../hooks/filter";
+import { FilterContext, UpdateFilterContext } from "../../context/filter";
 import type { Actions } from "../../types/filtering-actions";
 
 const INIT_FILTER: FilterType = {

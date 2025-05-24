@@ -1,11 +1,11 @@
-import { useFilter } from "../../hooks/filter";
+import { useFilter } from "../../context/filter";
 import RatingItem from "./RatingItem";
 
 export default function RatingFilter() {
   const { rating } = useFilter();
 
   return (
-    <div className="border-b-2 border-b-gray-300">
+    <div>
       {Array.from({ length: 5 }).map((_, i) => {
         return (
           <RatingItem
