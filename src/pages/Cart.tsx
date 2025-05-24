@@ -1,20 +1,26 @@
-import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { useCart } from "../context/cart";
+import CartProducts from "../components/cart/CartProducts";
+import EmptyCart from "../components/cart/EmptyCart";
 
 export default function Cart() {
+  const cart = useCart();
+
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6">Your Shopping Cart</h1>
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <p className="text-gray-600 mb-4">Your cart is currently empty.</p>
-        <p className="text-gray-600 mb-4">
-          Continue shopping to add items to your cart.
-        </p>
-        <Link
+    <div className="container mx-auto max-md:px-4 mb-35 pt-20 flex flex-col">
+      <div className="top">
+        <h1 className="text-2xl font-bold mb-6">Your Cart</h1>
+        <NavLink
           to="/"
-          className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+          className="text-gray-600 hover:underline flex items-center gap-2"
         >
-          Continue Shopping
-        </Link>
+          <FaArrowLeft />
+          <span>Continue shopping</span>
+        </NavLink>
+      </div>
+      <div className="cart">
+        {cart.length ? <CartProducts /> : <EmptyCart />}
       </div>
     </div>
   );

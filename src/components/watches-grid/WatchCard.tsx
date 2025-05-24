@@ -1,4 +1,4 @@
-import RatingStars from "./RatingStars";
+import RatingStars from "../RatingStars";
 
 export interface WatchCardProps {
   image: string;

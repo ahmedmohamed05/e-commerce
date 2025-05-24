@@ -1,12 +1,29 @@
 import { NavLink, useParams } from "react-router-dom";
 import findProduct from "../utils/find-product";
 import { FaArrowLeft } from "react-icons/fa";
-import RatingStars from "../components/watches-grid/RatingStars";
+import RatingStars from "../components/RatingStars";
+import { useUpdateCart } from "../context/cart";
 
 export default function Product() {
   const { id } = useParams<{ id: string }>();
 
-  const product = findProduct(id!)!;
+  const product = findProduct(id!);
+
+  const handleAddToCart = useUpdateCart();
+
+  if (!product)
+    return (
+      <div className="container max-md:px-1 mx-auto py-57">
+        <h1 className="text-3xl font-bold mb-10">Couldn't find product</h1>
+        <NavLink
+          to="/"
+          className="text-gray-600 hover:underline flex items-center gap-2"
+        >
+          <FaArrowLeft />
+          <span>Back to Home</span>
+        </NavLink>
+      </div>
+    );
 
   return (
     <div className="container max-md:px-1 mx-auto py-20">
@@ -49,7 +66,12 @@ export default function Product() {
             ))}
           </ul>
 
-          <button className="bg-gray-950 text-white py-2 px-4 rounded hover:bg-gray-800 transition-colors cursor-pointer">
+          <button
+            className="w-full md:w-auto bg-gray-950 text-white py-2 px-4 rounded hover:bg-gray-800 transition-colors cursor-pointer"
+            onClick={() => {
+              handleAddToCart({ type: "INCREASE_QUANTITY", id: product.id });
+            }}
+          >
             Add to Cart
           </button>
         </div>

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-20 bg-gray-200 border-t-[1px] border-gray-500 mt-10">
+    <footer className="pt-20 pb-10 bg-gray-200 border-t-[1px] border-gray-500 mt-10">
       <div className="container mx-auto max-md:px-1 flex flex-col md:flex-row">
         <div className="about">
           <p className="text-xl font-bold">About WatchHaven</p>
@@ -45,6 +45,9 @@ export default function Footer() {
             </button>
           </form>
         </div>
+      </div>
+      <div className="copy-rights text-center mt-10">
+        © 2025 WatchHaven. All rights reserved.
       </div>
     </footer>
   );

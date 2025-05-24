@@ -2,10 +2,13 @@ import { IoCartOutline } from "react-icons/io5";
 import { useRef } from "react";
 import { useUpdateFilter } from "../context/filter";
 import { NavLink } from "react-router-dom";
+import { useCart } from "../context/cart";
+import { getTotalOrders } from "../utils/total-orders";
 
 function Header() {
   const searchRef = useRef<HTMLInputElement | null>(null);
   const dispatch = useUpdateFilter();
+  const cartItems = getTotalOrders(useCart());
 
   const handleTextChange = () => {
     if (searchRef.current) {
@@ -36,7 +39,7 @@ function Header() {
           <IoCartOutline size={26} />
           <span className="sr-only">View Cart</span>
           <span className="absolute -top-1 -right-1 bg-gray-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-            0
+            {cartItems}
           </span>
         </NavLink>
       </div>
