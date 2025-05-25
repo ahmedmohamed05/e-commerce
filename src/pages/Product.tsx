@@ -13,7 +13,7 @@ export default function Product() {
 
   if (!product)
     return (
-      <div className="container max-md:px-1 mx-auto py-57">
+      <div className="container max-md:px-4 mx-auto py-57">
         <h1 className="text-3xl font-bold mb-10">Couldn't find product</h1>
         <NavLink
           to="/"
@@ -26,7 +26,7 @@ export default function Product() {
     );
 
   return (
-    <div className="container max-md:px-1 mx-auto py-20">
+    <div className="container max-md:px-4 mx-auto py-20">
       <NavLink
         to="/"
         className="text-gray-600 hover:underline flex items-center gap-2"

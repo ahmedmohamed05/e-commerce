@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="pt-20 pb-10 bg-gray-200 border-t-[1px] border-gray-500 mt-10">
-      <div className="container mx-auto max-md:px-1 flex flex-col md:flex-row">
+      <div className="container mx-auto max-md:px-4 flex flex-col md:flex-row">
         <div className="about">
           <p className="text-xl font-bold">About WatchHaven</p>
           <p className="text-gray-600 max-w-md">

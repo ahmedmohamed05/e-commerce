@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <header className="py-4 border-b-2 border-b-gray-300">
-      <div className="container max-md:px-1 mx-auto flex items-center gap-4 md:gap-8">
+      <div className="container max-md:px-4 mx-auto flex items-center gap-4 md:gap-8">
         <NavLink to="/" className="text-2xl md:text-3xl font-bold">
           Watch Haven
         </NavLink>
