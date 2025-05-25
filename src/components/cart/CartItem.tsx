@@ -26,7 +26,8 @@ export default function CartItem({
       <div className="flex flex-col sm:flex-row gap-6 px-4 sm:px-6">
         <div className="relative h-32 w-32 bg-white rounded-lg shadow-sm border border-gray-100 flex-shrink-0 overflow-hidden">
           <img
-            src={image}
+            // remove e-commerce in development
+            src={import.meta.env.PROD ? `/e-commerce/${image}` : image}
             alt={name}
             className="object-contain w-full h-full p-3"
           />
