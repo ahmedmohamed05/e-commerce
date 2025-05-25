@@ -1,5 +1,5 @@
 import type { ListItem } from "../types/filter";
-import watches from "../../public/data/watches.json";
+import watches from "../data/watches.json";
 
 export const brands: ListItem[] = [];
 export const categories: ListItem[] = [];

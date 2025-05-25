@@ -1,5 +1,5 @@
 import type FilterType from "../types/filter";
-import watches from "../../public/data/watches.json";
+import watches from "../data/watches.json";
 
 // Define the WatchType based on the expected structure
 export interface WatchType {
