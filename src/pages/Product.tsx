@@ -39,7 +39,7 @@ export default function Product() {
         <div className="image p-4 sm:p-8 bg-gray-200 rounded-lg flex items-center justify-center">
           <div className="relative w-full h-64 sm:h-80 md:h-96 max-w-full">
             <img
-              src={product.image}
+              src={`../${product.image}`}
               alt={product.name}
               className="w-full h-full object-contain max-w-full max-h-full"
             />
