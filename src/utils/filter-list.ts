@@ -1,4 +1,5 @@
 import type FilterType from "../types/filter";
+import watches from "../data/watches.json";
 
 // Define the WatchType based on the expected structure
 export interface WatchType {
@@ -13,27 +14,6 @@ export interface WatchType {
   features: string[];
 }
 
-// This will be populated when the data loads
-let watchesCache: WatchType[] = [];
-
-// Function to set the watches data
-let setWatchesData: (watches: WatchType[]) => void = () => {};
-
-// Function to wait for watches data to be loaded
-const getWatches = async (): Promise<WatchType[]> => {
-  if (watchesCache.length > 0) return watchesCache;
-  
-  return new Promise((resolve) => {
-    setWatchesData = (data: WatchType[]) => {
-      watchesCache = data;
-      resolve(data);
-    };
-  });
-};
-
-// Export the setWatchesData function to be used by the data loading logic
-export { setWatchesData };
-
 function noFilter(filter: FilterType) {
   return (
     filter.categories.filter((item) => item.selected).length === 0 &&
@@ -44,12 +24,10 @@ function noFilter(filter: FilterType) {
   );
 }
 
-export async function filterList(filter: FilterType): Promise<WatchType[]> {
-  const watches = await getWatches();
-  
-  if (noFilter(filter)) return [...watches];
+export function filterList(filter: FilterType) {
+  if (noFilter(filter)) return watches;
 
-  let filteredList = [...watches];
+  let filteredList = watches;
 
   // Filter by selected brands
   if (filter.brands.filter((b) => b.selected).length > 0) {
@@ -90,5 +68,6 @@ export async function filterList(filter: FilterType): Promise<WatchType[]> {
       item.name.toLowerCase().includes(text)
     );
   }
+
   return filteredList;
 }
