@@ -1,5 +1,4 @@
 import type FilterType from "../types/filter";
-import watches from "../data/watches.json";
 
 // Define the WatchType based on the expected structure
 export interface WatchType {
@@ -14,6 +13,30 @@ export interface WatchType {
   features: string[];
 }
 
+// Function to fetch watches data
+let cachedWatches: WatchType[] = [];
+
+export async function fetchWatches(): Promise<WatchType[]> {
+  if (cachedWatches.length > 0) return cachedWatches;
+
+  try {
+    // In production, the file will be in the /e-commerce/data/ directory
+    const basePath = import.meta.env.PROD ? '/e-commerce' : '';
+    const response = await fetch(`${basePath}/data/watches.json`);
+    
+    if (!response.ok) {
+      throw new Error('Failed to fetch watches data');
+    }
+    
+    const data = await response.json();
+    cachedWatches = Array.isArray(data) ? data : [];
+    return cachedWatches;
+  } catch (error) {
+    console.error('Error fetching watches:', error);
+    return [];
+  }
+}
+
 function noFilter(filter: FilterType) {
   return (
     filter.categories.filter((item) => item.selected).length === 0 &&
@@ -24,10 +47,11 @@ function noFilter(filter: FilterType) {
   );
 }
 
-export function filterList(filter: FilterType) {
-  if (noFilter(filter)) return watches;
+export async function filterList(filter: FilterType): Promise<WatchType[]> {
+  const watches = await fetchWatches();
+  if (noFilter(filter)) return [...watches];
 
-  let filteredList = watches;
+  let filteredList = [...watches];
 
   // Filter by selected brands
   if (filter.brands.filter((b) => b.selected).length > 0) {
