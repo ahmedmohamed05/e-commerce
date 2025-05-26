@@ -21,18 +21,17 @@ export async function fetchWatches(): Promise<WatchType[]> {
 
   try {
     // In production, the file will be in the /e-commerce/data/ directory
-    const basePath = import.meta.env.PROD ? '/e-commerce' : '';
-    const response = await fetch(`${basePath}/data/watches.json`);
-    
+    const response = await fetch(`/data/watches.json`);
+
     if (!response.ok) {
-      throw new Error('Failed to fetch watches data');
+      throw new Error("Failed to fetch watches data");
     }
-    
+
     const data = await response.json();
     cachedWatches = Array.isArray(data) ? data : [];
     return cachedWatches;
   } catch (error) {
-    console.error('Error fetching watches:', error);
+    console.error("Error fetching watches:", error);
     return [];
   }
 }

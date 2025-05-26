@@ -27,7 +27,7 @@ export default function CartItem({
         <div className="relative h-32 w-32 bg-white rounded-lg shadow-sm border border-gray-100 flex-shrink-0 overflow-hidden">
           <img
             // remove /e-commerce in development
-            src={`/e-commerce${image}`}
+            src={image}
             alt={name}
             className="object-contain w-full h-full p-3"
           />

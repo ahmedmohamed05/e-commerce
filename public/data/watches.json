@@ -1,0 +1,376 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Chronograph",
+    "price": 299.99,
+    "rating": 5,
+    "image": "/images/1.png",
+    "brand": "Timeless",
+    "category": "Chronograph",
+    "description": "A sophisticated chronograph watch with precision timing and elegant design. Features include a stopwatch function, date display, and water resistance up to 50 meters.",
+    "features": [
+      "Japanese quartz movement",
+      "Stainless steel case and band",
+      "Sapphire crystal glass",
+      "50m water resistance",
+      "Chronograph functionality"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Diver Pro 200M",
+    "price": 449.99,
+    "rating": 4.8,
+    "image": "/images/2.png",
+    "brand": "Aquamaster",
+    "category": "Dive",
+    "description": "Professional diving watch with exceptional water resistance and durability. Designed for underwater adventures with luminous markers for visibility in low light conditions.",
+    "features": [
+      "Automatic self-winding movement",
+      "Stainless steel with anti-corrosion coating",
+      "Unidirectional rotating bezel",
+      "200m water resistance",
+      "Super-LumiNova indices and hands"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Skyward GMT",
+    "price": 599.99,
+    "rating": 2.7,
+    "image": "/images/3.png",
+    "brand": "AeroTime",
+    "category": "Pilot",
+    "description": "Aviation-inspired watch with GMT functionality and dual time zone display. Features a rotating 24-hour bezel for tracking multiple time zones during flights.",
+    "features": [
+      "Swiss automatic movement",
+      "42mm titanium case",
+      "Anti-reflective sapphire crystal",
+      "24-hour GMT hand",
+      "200m water resistance"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Heritage Automatic",
+    "price": 399.99,
+    "rating": 4.6,
+    "image": "/images/4.png",
+    "brand": "VintageHorology",
+    "category": "Dress",
+    "description": "Classic dress watch with minimalist design featuring a hand-stitched leather strap and domed crystal for vintage appeal.",
+    "features": [
+      "Miyota automatic movement",
+      "40mm stainless steel case",
+      "Domed mineral crystal",
+      "5 ATM water resistance",
+      "Exhibition case back"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Extreme Endurance",
+    "price": 349.99,
+    "rating": 3.2,
+    "image": "/images/5.png",
+    "brand": "TitanGear",
+    "category": "Sports",
+    "description": "Rugged sports watch with shock resistance and advanced activity tracking features. Ideal for outdoor adventures and extreme sports.",
+    "features": [
+      "Solar-powered movement",
+      "Carbon fiber composite case",
+      "Altimeter & barometer",
+      "Thermometer",
+      "100m water resistance"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Moonphase Elite",
+    "price": 899.99,
+    "rating": 4.9,
+    "image": "/images/6.png",
+    "brand": "CelestialTime",
+    "category": "Luxury",
+    "description": "Luxurious moonphase complication watch with guilloché dial and genuine alligator strap. A masterpiece of horological artistry.",
+    "features": [
+      "Swiss mechanical movement",
+      "18k rose gold case",
+      "Handcrafted dial",
+      "Moonphase indicator",
+      "30m water resistance"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Tactical Field",
+    "price": 279.99,
+    "rating": 4.3,
+    "image": "/images/7.png",
+    "brand": "ArmourGear",
+    "category": "Military",
+    "description": "Military-grade field watch with NATO strap and tritium tube illumination for tactical operations.",
+    "features": [
+      "Quartz movement",
+      "Matte black PVD coating",
+      "Tritium gas tubes",
+      "Parachute strap",
+      "100m water resistance"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Skeleton Automatic",
+    "price": 499.99,
+    "rating": 2.8,
+    "image": "/images/8.png",
+    "brand": "Mechanica",
+    "category": "Skeleton",
+    "description": "Open-heart design revealing intricate mechanical movement through multi-layer skeletonized dial.",
+    "features": [
+      "Exhibition case back",
+      "Blue steel hands",
+      "40-hour power reserve",
+      "Hacking seconds",
+      "5 ATM water resistance"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Solar Navigator",
+    "price": 229.99,
+    "rating": 3.2,
+    "image": "/images/9.png",
+    "brand": "EcoDrive",
+    "category": "Solar",
+    "description": "Eco-friendly solar-powered watch with perpetual calendar and world time function.",
+    "features": [
+      "Solar charging system",
+      "Titanium case",
+      "Perpetual calendar",
+      "24-city time zones",
+      "200m water resistance"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Racing Chrono",
+    "price": 699.99,
+    "rating": 4,
+    "image": "/images/10.png",
+    "brand": "Velocity",
+    "category": "Racing",
+    "description": "Motorsport-inspired chronograph with tachymeter scale and perforated leather racing strap.",
+    "features": [
+      "Column-wheel chronograph",
+      "Ceramic bezel",
+      "Vintage-inspired lume",
+      "Quick-release strap",
+      "100m water resistance"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Digital Commander",
+    "price": 199.99,
+    "rating": 3.9,
+    "image": "/images/11.png",
+    "brand": "TechWear",
+    "category": "Digital",
+    "description": "Modern digital watch with smart features including step counter and Bluetooth connectivity.",
+    "features": [
+      "LED display",
+      "Stainless steel case",
+      "Heart rate monitor",
+      "Smart notifications",
+      "50m water resistance"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Tourbillon Master",
+    "price": 9999.99,
+    "rating": 5.0,
+    "image": "/images/12.png",
+    "brand": "HauteHorlogerie",
+    "category": "Luxury",
+    "description": "Exquisite manual-winding tourbillon watch with hand-engraved movement and platinum case.",
+    "features": [
+      "One-minute tourbillon",
+      "Platinum 950 case",
+      "Hand-finished movement",
+      "72-hour power reserve",
+      "30m water resistance"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Vintage Diver",
+    "price": 379.99,
+    "rating": 4.4,
+    "image": "/images/13.png",
+    "brand": "RetroMarine",
+    "category": "Dive",
+    "description": "Retro-styled dive watch with faded bezel insert and tropical-style dial for vintage enthusiasts.",
+    "features": [
+      "Automatic movement",
+      "Domed acrylic crystal",
+      "Beads-of-rice bracelet",
+      "300m water resistance",
+      "Luminous plots"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Bauhaus Minimal",
+    "price": 249.99,
+    "rating": 2.6,
+    "image": "/images/14.png",
+    "brand": "Form&Function",
+    "category": "Dress",
+    "description": "Clean minimalist design following Bauhaus principles with sunburst dial and mesh bracelet.",
+    "features": [
+      "Japanese automatic movement",
+      "38mm case diameter",
+      "Applied indices",
+      "Quick-change strap",
+      "3 ATM water resistance"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Astronomer's Choice",
+    "price": 799.99,
+    "rating": 1.8,
+    "image": "/images/15.png",
+    "brand": "StellarTime",
+    "category": "Complication",
+    "description": "Astronomical watch displaying sidereal time and celestial events with rotating star chart.",
+    "features": [
+      "Annual calendar",
+      "Moonphase display",
+      "Star map complication",
+      "18k white gold case",
+      "30m water resistance"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Smart Hybrid",
+    "price": 299.99,
+    "rating": 2,
+    "image": "/images/16.png",
+    "brand": "FutureTech",
+    "category": "Smartwatch",
+    "description": "Analog-digital hybrid smartwatch with fitness tracking and customizable dial faces.",
+    "features": [
+      "Bluetooth connectivity",
+      "Stainless steel case",
+      "Activity tracking",
+      "10-day battery life",
+      "50m water resistance"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Pocket Watch Classic",
+    "price": 199.99,
+    "rating": 4.5,
+    "image": "/images/17.png",
+    "brand": "HeritageTime",
+    "category": "Pocket",
+    "description": "Traditional railroad-style pocket watch with hunter case and Roman numeral dial.",
+    "features": [
+      "Mechanical hand-winding",
+      "44mm brass case",
+      "Glass crystal",
+      "Chain included",
+      "Antique finish"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Desert Explorer",
+    "price": 429.99,
+    "rating": 3.12,
+    "image": "/images/18.png",
+    "brand": "Sandstorm",
+    "category": "Field",
+    "description": "Sand-resistant field watch with compass function and khaki NATO strap for desert operations.",
+    "features": [
+      "Automatic movement",
+      "Bronze case",
+      "Internal rotating compass",
+      "Double-domed sapphire",
+      "150m water resistance"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Art Deco Masterpiece",
+    "price": 1499.99,
+    "rating": 2.9,
+    "image": "/images/19.png",
+    "brand": "GoldenEra",
+    "category": "Luxury",
+    "description": "Geometric Art Deco design with stepped case and intricate guilloché dial patterns.",
+    "features": [
+      "Manual-winding movement",
+      "Platinum case",
+      "Enamel dial",
+      "Breguet-style hands",
+      "30m water resistance"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Frostproof Expedition",
+    "price": 549.99,
+    "rating": 4.6,
+    "image": "/images/20.png",
+    "brand": "PolarGear",
+    "category": "Exploration",
+    "description": "Extreme cold-resistant watch with thermal insulation and Arctic expedition features.",
+    "features": [
+      "Automatic movement",
+      "Liquid-filled dial",
+      "Anti-fog crystal",
+      "-50°C temperature resistance",
+      "200m water resistance"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Steampunk Automatic",
+    "price": 699.99,
+    "rating": 3.7,
+    "image": "/images/21.png",
+    "brand": "GearWorks",
+    "category": "Novelty",
+    "description": "Industrial steampunk design with exposed gears and bronze-finished case.",
+    "features": [
+      "Skeleton dial",
+      "Power reserve indicator",
+      "Leather strap with rivets",
+      "Exhibition case back",
+      "50m water resistance"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Olympic Edition",
+    "price": 899.99,
+    "rating": 5,
+    "image": "/images/22.png",
+    "brand": "ChronoMaster",
+    "category": "Sports",
+    "description": "Official timing watch for athletic events with split-second chronograph and lap counter.",
+    "features": [
+      "Flyback chronograph",
+      "Ceramic bezel insert",
+      "Regatta timer",
+      "Titanium case",
+      "100m water resistance"
+    ]
+  }
+]

@@ -1,20 +1,13 @@
 {
-  "name": "e-commerce",
+  "name": "",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://ahmedmohamed05.github.io/e-commerce",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ahmedmohamed05/e-commerce.git"
+    "preview": "vite preview"
   },
   "keywords": [
     "e-commerce",
